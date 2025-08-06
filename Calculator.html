@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculator</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: bisque;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .calculator {
+      background-color: rgb(54, 53, 53);
+      border-radius: 20px;
+      width: 300px;
+      padding: 20px;
+      box-shadow: 0 0 10px black;
+    }
+
+    .display {
+      color: white;
+      text-align: right;
+      padding: 10px;
+      font-size: 2.5rem;
+      min-height: 70px;
+    }
+
+    .box {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 10px;
+    }
+
+    .box div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60px;
+      font-size: 1.5rem;
+      border-radius: 50%;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .gray {
+      background-color: gainsboro;
+      color: black;
+    }
+
+    .orange {
+      background-color: orange;
+      color: white;
+    }
+
+    .dark {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <div class="display">
+    </div>
+    <div class="box">
+      <div class="gray">AC</div>
+      <div class="gray">+/-</div>
+      <div class="gray">%</div>
+      <div class="orange">/</div>
+
+      <div class="dark">7</div>
+      <div class="dark">8</div>
+      <div class="dark">9</div>
+      <div class="orange">*</div>
+
+      <div class="dark">4</div>
+      <div class="dark">5</div>
+      <div class="dark">6</div>
+      <div class="orange">−</div>
+
+      <div class="dark">1</div>
+      <div class="dark">2</div>
+      <div class="dark">3</div>
+      <div class="orange">+</div>
+
+      <div class="dark">,</div>
+      <div class="dark zero">0</div>
+      <div class="dark">.</div>
+      <div class="orange">=</div>
+    </div>
+  </div>
+</body>
+</html>
